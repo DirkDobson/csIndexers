@@ -2,11 +2,14 @@
 
 namespace Indexers
 {
+    
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var cookie = new HttpCookie();
+            cookie["name"] = "Dirk";
+            System.Console.WriteLine(cookie["name"]);
         }
     }
 }
